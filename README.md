@@ -1,5 +1,5 @@
 # Local Machine to GitHub Repository
-A project that demonstrates how to move source code from a local machine to a GitHub repository using Git version control.
+This project that demonstrates how to move source code from a local machine to a GitHub repository using Git version control.
 
 ### Overview
 Version control is a fundamental skill for developers, DevOps engineers, and cloud professionals. This project provides a practical introduction to Git and GitHub by walking through the complete workflow of creating a local repository, tracking changes, creating commits, connecting to GitHub, and pushing code to a remote repository.
@@ -50,8 +50,8 @@ Verify Git installation:
 
 Create a new project folder:
 
-    mkdir my-first-project
-    cd my-first-project
+    mkdir website
+    cd website
 
 Create a sample file:
 
@@ -75,11 +75,11 @@ Verify repository status:
 
 Configure your Git username:
 
-    git config --global user.name "Your Name"
+    git config --global user.name "lotanna"
 
 Configure your Git email address:
 
-    git config --global user.email "you@example.com"
+    git config --global user.email "lotannaobianefo.official@gmail.com"
 
 Verify your configuration:
 
@@ -125,13 +125,13 @@ A commit acts as a snapshot of your project at a specific point in time.
 
 Example repository URL:
 
-    https://github.com/lota001/local-to-github.git
+    https://github.com/lota001/Local-Machine-to-GitHub.git
 
 ### Step 7: Connect Local Repository to GitHub
 
 Add the GitHub repository as a remote:
 
-    git remote add origin https://github.com/lota001/local-to-github.git
+    git remote add origin https://github.com/lota001/Local-Machine-to-GitHub.git
 
 Verify the connection:
 
