@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #1e293b;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .project-card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            text-align: center;
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .status span {
+            color: green;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lotanna Obianefo</h1>
+    <p>Cloud & DevOps Engineer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Cloud and DevOps Engineer passionate about automating infrastructure,
+        building CI/CD pipelines, containerizing applications, and deploying scalable
+        cloud-native solutions using Azure, Docker, Kubernetes, Terraform, and GitHub Actions.
+    </p>
+
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+
+        <div class="card">
+            <h3>Cloud Platforms</h3>
+            <p>Microsoft Azure, AWS, Azure App Services, Virtual Machines, Storage Accounts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Containers</h3>
+            <p>Docker, Kubernetes, AKS, Container Registries.</p>
+        </div>
+
+        <div class="card">
+            <h3>CI/CD</h3>
+            <p>GitHub Actions, Azure DevOps, Jenkins, Continuous Integration & Deployment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Infrastructure as Code</h3>
+            <p>Terraform, Bicep, ARM Templates, Automated Infrastructure Provisioning.</p>
+        </div>
+
+        <div class="card">
+            <h3>Monitoring</h3>
+            <p>Azure Monitor, Log Analytics, Prometheus, Grafana.</p>
+        </div>
+
+        <div class="card">
+            <h3>Version Control</h3>
+            <p>Git, GitHub, Branching Strategies, Pull Requests.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Featured DevOps Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>CI/CD Pipeline Automation</h3>
+            <p>
+                Automated application deployments using GitHub Actions,
+                Docker, and Azure App Services.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Containerized Web Application</h3>
+            <p>
+                Built and deployed a Dockerized web application with automated
+                testing and release workflows.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Infrastructure as Code</h3>
+            <p>
+                Provisioned Azure infrastructure using Terraform and automated
+                deployments through CI/CD pipelines.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="status">
+        <h2>Deployment Status</h2>
+        <p><span>✓ Production Environment Healthy</span></p>
+        <p>Last Deployment: Successful</p>
+        <p>Availability: 99.99%</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: lotannaobianefo.official@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/lotanna-obianefo</p>
+    <p>GitHub: github.com/lota001</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 DevOps Engineer Portfolio | Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
